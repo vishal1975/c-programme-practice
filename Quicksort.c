@@ -18,8 +18,7 @@ int quick(int a[],int i,int j,int k){
          h++;
         }
     }
-    if(h==pivot)
-    return h;
+    
     swap1(a,h,k);
     return h;
 
@@ -32,7 +31,7 @@ void quiksort(int a[],int  i,int j){
 
 
 int l=quick(a,i,j,j);
-printf("%d\n",l);
+
 quiksort(a,i,l-1);
 quiksort(a,l+1,j);
 
